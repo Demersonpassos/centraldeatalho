@@ -1,0 +1,367 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@200..700&display=swap');
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --cor: rgb(255, 255, 255);
+    --cor1: #F2F2F2;
+    --cor2: rgba(218, 195, 241, 0.753);
+    --cor3: rgba(130, 45, 221, 0.658);
+    --cor4: rgba(103, 35, 175, 0.712);
+    --cor5: rgba(97, 31, 167, 0.678);
+    --cor6: black;
+    --cor7: rgb(68, 23, 116);
+    --cor8: rgb(165, 160, 160);
+    --cor9: rgb(52, 17, 90);
+    --cor10: rgba(68, 23, 116, 0.575);
+    --cor11: rgba(255, 194, 26, 0.986);
+    --cortranp: rgba(82, 81, 81, 0.377);
+    --font1: "Bebas Neue", sans-serif;
+    --font2: "Titillium Web", sans-serif;
+    --font3: "Oswald", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+    
+    .bebas-neue-regular {
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .titillium-web-extralight {
+        font-family: "Titillium Web", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    :root {
+        --cor: rgb(255, 255, 255);
+        --cor1: #F2F2F2;
+        --cor2: rgba(218, 195, 241, 0.753);
+        --cor3: rgba(130, 45, 221, 0.658);
+        --cor4: rgba(103, 35, 175, 0.712);
+        --cor5: rgba(97, 31, 167, 0.678);
+        --cor6: black;
+        --cor7: rgb(68, 23, 116);
+        --cor8: rgb(165, 160, 160);
+        --cor9: rgb(52, 17, 90);
+        --cor10: rgba(68, 23, 116, 0.575);
+        --cor11: rgba(255, 194, 26, 0.986);
+        --cortranp: rgba(82, 81, 81, 0.377);
+        --font1: "Bebas Neue", sans-serif;
+        --font2: "Titillium Web", sans-serif;
+        --font3: "Oswald", sans-serif;
+    }
+    
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--cor7);
+        padding: 10px;
+        z-index: 1000;
+    }
+    
+    nav {
+        background-image: linear-gradient(to top, var(--cor9), var(--cor7));
+        text-align: center;
+        font-size: 15px;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #555;
+        padding: 10px;
+        z-index: 1000;
+        justify-content: center;
+        display: flex;
+        font-family: var(--font3);
+    }
+    
+    .container2, .container3, .container4 {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:0px;
+        padding: 30px;
+        gap: 20px;
+        position: relative;
+        background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+        border: 2px solid rgba(0, 0, 0, 0.582);
+        
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 140px;
+        padding: 30px;
+        gap: 20px;
+        position: relative;
+        background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+        border: 2px solid rgba(0, 0, 0, 0.582);
+        
+    }
+    
+    
+    .container4 {
+        background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+        border: 2px solid rgba(0, 0, 0, 0.562);
+        padding-bottom: 80px;
+    }
+    
+    .externa {
+        flex: 1 1 23%; /* Permite que cada link ocupe até 23% do container */
+        max-width: 150px;
+        min-width: 150px;
+        border: 0px solid rgba(169, 11, 231, 0);
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 30px;
+        position: relative;
+        padding-top: 25px;
+
+        
+        
+        flex-direction: column; /* Alinha itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+        padding-bottom: 20px; 
+        
+    }
+    
+    .interna {
+        width: 100%;
+        background-image: linear-gradient(to right, rgb(88, 87, 87), rgb(172, 170, 170));
+        height: 150px;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: 0px 0px 0px 9px rgba(0, 0, 0, 0.26);
+        position: relative;
+
+        display: flex; /* Usa flexbox para alinhar itens */
+        flex-direction: column; /* Alinha itens em coluna */
+        align-items: center; /* Centraliza horizontalmente */
+
+        
+    }
+    
+    img {
+        max-width: 100%;
+        min-height: auto;
+        height: auto;
+        width: auto;
+        object-fit: cover;
+        border-radius: 30px;
+        pointer-events: none;
+        
+        
+    }
+    
+    .texto {
+        position: absolute; /* Define a posição absoluta */
+        bottom: -40px; /* Ajusta a distância do fundo do contêiner pai */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Ajusta para centralizar corretamente */
+        padding-top: 10px; /* Adiciona um espaçamento interno no topo */
+        text-align: center;
+        padding: 4px;
+        color: var(--cor6);
+        font-size: 18px;
+        font-family: var(--font2);
+        background-color: var(--cor11);
+        pointer-events: none;
+        border-radius: 20px;
+        max-width: 200px;
+        height: auto;
+        margin: 0px;
+        min-width:150px;
+        
+    }
+    
+    .erp {
+        background-color: rgb(196, 80, 3);
+        margin: 0 50px 0 0;
+        color: var(--cor1);
+        border-radius: 0 0 20px 0;
+    }
+    
+    .zap {
+        background-color: rgb(9, 168, 9);
+        color: var(--cor1);
+        border-radius: 0 0 0 20px;
+        margin: 0 2px 0 50px;
+    }
+    
+    .boot {
+        background-color: rgb(14, 93, 212);
+        color: var(--cor1);
+        border-radius: 0;
+        margin: 0 2px 0 0;
+    }
+    
+    .erp, .zap, .boot {
+        font-weight: bold;
+        padding: 7px;
+        font-family: var(--font2);
+        font-style: bold;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.822);
+        width: 200px;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    h1 {
+        background-color: var(--cor7);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: var(--cor1);
+        font-family: var(--font3);
+        text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.699);
+    }
+    
+    h2 {
+        margin: 0;
+        padding: 3px 0px 3px 30px;
+        color: var(--cor9);
+        font-family: var(--font3);
+        font-size: 1.5em;
+        width: 97.5%;
+        background-color:rgba(210, 178, 241, 0.753) ;
+        text-align: left;
+        position:absolute;
+        top: 0;
+        left: 0;
+        border: solid 1px rgba(167, 108, 226, 0.753);
+        
+    }
+    
+    footer {
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(68, 23, 116, 0.637);
+        padding: 5px;
+        z-index: 1000;
+        text-align: center;
+        color: var(--cor);
+        font-family: var(--font2);
+    }
+    
+    abbr {
+    
+        border: none; /* Remove a borda */
+        text-decoration: none; /* Remove a sublinha */
+        cursor: help; /* Opcional: mantém o cursor de ajuda ao passar o mouse */
+    }
+    
+    nav > a > .zap:hover{
+        background-color: rgb(18, 216, 18);
+        text-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.377);
+        color: var(--cor9);
+        transform: scale(95%); /* diminui um pouco o tamanho da imagem */ 
+    }
+    nav > a > .erp:hover{
+        background-color: rgb(245, 105, 11);
+        text-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.39);
+        color: var(--cor9); 
+        transform: scale(95%); /* diminui um pouco o tamanho da imagem */ 
+    }
+    nav > a > .boot:hover{
+        background-color: rgb(30, 113, 238);
+        text-shadow: 0px 0px 0px 7px rgba(0, 0, 0, 0.308);
+        color: var(--cor9);
+        transform: scale(95%); /* diminui um pouco o tamanho da imagem */ 
+    }
+    /*
+    .externa:hover{
+        border-color: rgba(255, 110, 26, 0.986);
+        border-width: 10px;
+    }
+        */
+
+    .externa:hover .interna  img{
+        filter: opacity(75%); /* Define a transparência da imagem */
+        transform: scale(87%); /* Aumenta um pouco o tamanho da imagem */
+
+       
+    
+    }
+    .externa:active .interna  img{
+        
+        transform: scale(98%); /* Aumenta um pouco o tamanho da imagem */
+
+       
+    
+    }
+    
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--cor7);
+    
+    z-index: 1000;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color:rgb(69, 27, 114);
+    color: #F2F2F2;
+    position: fixed; /* ou 'absolute' dependendo do layout desejado */
+    top: 101px; /* ajuste conforme necessário */
+    left: 0;
+    z-index: 999; /* para garantir que ele fique acima de outros elementos */
+    border-bottom: solid 1px rgb(92, 91, 91);
+    
+}
+
+.marquee {
+    display: flex;
+    width: 100%;
+    animation: marquee 35s linear infinite;
+}
+
+.marquee p {
+    font-family: var(--font1);
+    padding: 7px;
+    white-space: nowrap;
+    margin: 0 50px;
+    font-weight: 600;
+}
+.marquee .fot::before{
+    content: "⚠️"; /* Emoji de alerta */
+     font-size: 1.2em; /* Ajuste o tamanho conforme necessário */
+     margin-right: 10px; /* Espaço entre o emoji e o texto */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
